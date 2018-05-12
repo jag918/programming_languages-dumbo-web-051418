@@ -3,8 +3,6 @@ def reformat_languages(language)
   language.each do |key,value|
     #puts (key)
     value.each do |attribute,i_or_c|
-      #puts (attribute)
-      puts (i_or_c)
       i_or_c[:style]=key
       new_hash[attribute] = i_or_c
     end
