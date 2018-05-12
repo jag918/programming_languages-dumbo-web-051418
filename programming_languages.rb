@@ -6,7 +6,7 @@ def reformat_languages(language)
       #puts (attribute)
       puts (i_or_c)
       i_or_c[:style]=key
-      new_hash[attribute.to_s] = i_or_c
+      new_hash[attribute] = i_or_c
     end
   end
 new_hash
