@@ -4,6 +4,8 @@ def reformat_languages(language)
     #puts (key)
     value.each do |langugage,i_or_c|
       if new_hash.has_key?(langugage)
+        new_hash[language][:style] << key
+      else
         i_or_c[:style]=[key]
         new_hash[language] = i_or_c
       end
