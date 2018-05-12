@@ -37,14 +37,8 @@ def reformat_languages(language)
     value.each do |attribute,i_or_c|
       #puts (attribute)
       puts (i_or_c)
-      i_or_c[:style]
+      i_or_c[:style]=key
       new_hash[attribute.to_s] = i_or_c
-      #puts (new_hash)
-    #   if key==":oo".to_sym
-    #     new_hash[attribute.to_s]={style:":oo"}
-    #   else
-    #     new_hash[attribute.to_s]={style:":functional"}
-    #   end
     end
   end
 new_hash
